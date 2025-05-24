@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnipersEco - Produtos de Limpeza Ecológicos</title>
+    <link rel="stylesheet" href="/Utensílios Descartáveis/site1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos adicionais para os cards */
+        .materiais-section {
+            padding: 60px 0;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .card-img {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            font-size: 2rem;
+            text-align: center;
+            background: rgba(255,255,255,0.7);
+            padding: 10px 20px;
+            border-radius: 8px;
+            width: 90%;
+        }
+        
+        .h3-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            visibility: hidden;
+        }
+        
+        .h3-card.visible {
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+        }
+        
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card-img {
+                height: 350px;
+            }
+            
+            .h3-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="primeira-pagina">
+        <header id="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="https://img.icons8.com/color/48/000000/leaf.png" alt="Logo EcoSoluções">
+                        <h1>Unipers Ecologic</h1>
+                    </div>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#ingredientes">Ingredientes</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Produtos de Limpeza Ecológicos</h2>
+                    <p>Alternativas sustentáveis para uma limpeza eficiente e sem impacto ambiental</p>
+                    <a href="#produtos" class="btn">Conheça as opções</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="materials-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Principais Produtos de Limpeza Ecológicos</h2>
+                <p>Conheça as alternativas sustentáveis para cada necessidade de limpeza</p>
+            </div>
+            
+            <!-- Cards de Produtos -->
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/detergente-ecologicos.jpg" alt="Detergentes Ecológicos">
+                    <div class="text-overlay">
+                        <h4>Detergentes Ecológicos</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p>Os detergentes ecológicos são formulados com ingredientes vegetais e biodegradáveis que não poluem os cursos d'água. Diferentemente dos convencionais, não contêm fosfatos, cloro ou derivados de petróleo.</p>
+                        <p><br>Existem versões para lavar louças, roupas e superfícies, com eficácia comparável aos produtos tradicionais. Muitos utilizam óleos essenciais como fragrância natural, evitando alergias e irritações.</p>
+                        <p><br>Uma vantagem adicional é que esses produtos geralmente são concentrados, reduzindo a quantidade de embalagens necessárias.</p>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/desinfetantes-naturais.jpg" alt="Desinfetantes Naturais">
+                    <div class="text-overlay">
+                        <h4>Desinfetantes Naturais</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p><br><br>Desinfetantes ecológicos utilizam princípios ativos como álcool, vinagre, óleos essenciais (tea tree, eucalipto) e peróxido de hidrogênio para combater bactérias e vírus sem os efeitos nocivos dos químicos convencionais.</p>
+                        <p><br>Essas formulações são especialmente indicadas para famílias com crianças, pets ou pessoas com sensibilidade química, pois não emitem compostos orgânicos voláteis (VOCs) que prejudicam a qualidade do ar interno.</p>
+                        <p><br>Podem ser usados em pisos, banheiros e cozinhas com a mesma eficácia dos produtos tradicionais.</p>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/sabao-ecologico.jpg" alt="Sabões e Lava-Roupas Ecológicos">
+                    <div class="text-overlay">
+                        <h4>Sabões Ecológicos</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p><br><br>Os sabões e detergentes para roupas ecológicos são feitos a partir de matérias-primas renováveis como óleos vegetais, evitando os tensoativos petroquímicos dos convencionais.</p>
+                        <p><br>As versões mais sustentáveis são livres de branqueadores ópticos, fosfatos e enzimas agressivas, sendo adequadas para peles sensíveis e roupas de bebê. Muitas fórmulas são testadas dermatologicamente.</p>
+                        <p><br>Além das versões líquidas, existem opções em pó ou em barra, com embalagens mínimas ou recicláveis, reduzindo ainda mais o impacto ambiental.</p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Outros Produtos -->
+    <div class="outros-tipos-header">
+    <div class="container">
+        <div class="outros-tipos-title">
+            <div class="title-line"></div>
+            <h2>Outros Tipos de Embalagens</h2>
+            <div class="title-line"></div>
+        </div>
+        <p class="outros-tipos-subtitle">Conheça mais alternativas sustentáveis</p>
+    </div>
+</div>
+
+    <section class="outros-tipos">
+        <div class="text-card aparecer">
+            <h1>Limpa-Vidros Natural</h1>
+            <div class="imagem">
+                <img src="/img/limpa-vidro.jpg" alt="Limpa-Vidros Natural">
+            </div>
+            <div class="texto">
+                <p>Feito com vinagre, álcool e óleos essenciais, remove marcas e gordura sem deixar resíduos químicos ou odores fortes.</p>
+                <p><strong><hr>Características: Pode ser feito em casa com ingredientes simples e armazenado em frascos reutilizáveis.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Amaciante de Roupas Natural</h1>
+            <div class="imagem">
+                <img src="/img/amaciante-roupa.jpeg" alt="Amaciante Natural">
+            </div>
+            <div class="texto">
+                <p>Alternativas ao amaciante convencional utilizam vinagre branco, bicarbonato e óleos essenciais para suavizar tecidos.</p>
+                <p><strong><br>Características: Não acumula resíduos nas fibras nem nas máquinas de lavar, prolongando a vida útil das roupas.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Multiuso Ecológico</h1>
+            <div class="imagem">
+                <img src="/img/multiuso.jpeg" alt="Multiuso Ecológico">
+            </div>
+            <div class="texto">
+                <p>Produto versátil para limpeza geral, feito com ingredientes naturais como sabão de coco, bicarbonato e óleos essenciais.</p>
+                <p><strong><br>Características: Pode ser usado em diversas superfícies como azulejos, bancadas e eletrodomésticos.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Desengordurante Natural</h1>
+            <div class="imagem">
+                <img src="/img/desengordurante.jpeg" alt="Desengordurante Natural">
+            </div>
+            <div class="texto">
+                <p><br>Formulado com ingredientes como bicarbonato, vinagre e limão, remove gordura sem químicos agressivos.</p>
+                <p><strong><br>Características: Ideal para fogões, exaustores e áreas de preparo de alimentos.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Pastilhas para Lava-Louças</h1>
+            <div class="imagem">
+                <img src="/img/pastilhas-lava-louça.jpeg" alt="Pastilhas Ecológicas">
+            </div>
+            <div class="texto">
+                <p>Versões ecológicas das pastilhas para máquina de lavar louça, sem fosfatos, cloro ou fragrâncias sintéticas.</p>
+                <p><strong><br>Características: Embaladas em materiais compostáveis ou recicláveis.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Ingredientes -->
+    <section id="ingredientes" class="process">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Ingredientes Naturais</h2>
+                <p>Conheça os principais componentes dos produtos de limpeza ecológicos</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step fade-in delay-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Vinagre Branco</h3>
+                        <p>Poderoso desinfetante natural que remove gordura, mofo e bactérias. Deixa superfícies brilhantes e sem manchas.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Bicarbonato de Sódio</h3>
+                        <p>Esmalte natural que remove sujeira e odores. Combina bem com vinagre para potencializar a limpeza.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Óleos Essenciais</h3>
+                        <p>Além de aromatizar, muitos têm propriedades antibacterianas. Tea tree, lavanda e limão são os mais utilizados.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-1">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Sabão de Coco ou Castanha</h3>
+                        <p>Base vegetal para muitos produtos de limpeza, biodegradável e hipoalergênico.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-2">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Ácido Cítrico</h3>
+                        <p>Remove manchas de água e sabão, desincrusta minerais e tem ação desinfetante moderada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Vantagens dos Produtos Ecológicos</h2>
+                <p>Por que escolher alternativas sustentáveis para limpeza</p>
+            </div>
+            <div class="benefit-grid">
+                <div class="benefit-card fade-in delay-1">
+                    <div class="benefit-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>Seguros para a Vida Aquática</h3>
+                    <p>Biodegradáveis e sem fosfatos, não contaminam rios e oceanos como os produtos convencionais.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-2">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Melhor Qualidade do Ar</h3>
+                    <p>Não emitem compostos orgânicos voláteis (VOCs) que prejudicam a saúde respiratória.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-3">
+                    <div class="benefit-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Seguros para Crianças e Pets</h3>
+                    <p>Não contêm químicos tóxicos que possam causar alergias ou intoxicações acidentais.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-1">
+                    <div class="benefit-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Embalagens Sustentáveis</h3>
+                    <p>Muitos vêm em recipientes reciclados, recicláveis ou com sistema de refil para reduzir resíduos.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-2">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Matérias-Primas Renováveis</h3>
+                    <p>Feitos com ingredientes vegetais em vez de derivados de petróleo.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-3">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Economia Doméstica</h3>
+                    <p>Muitos podem ser feitos em casa com ingredientes simples, reduzindo custos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção CTA -->
+    <section class="cta fade-in">
+        <div class="container">
+            <h2>Faça a Transição para uma Limpeza Sustentável</h2>
+            <p>Substituir gradualmente seus produtos de limpeza convencionais por versões ecológicas é um passo importante para reduzir a poluição química em sua casa e no meio ambiente.</p>
+            <a href="#produtos" class="btn">Conheça as Alternativas</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="https://img.icons8.com/color/48/000000/leaf.png" alt="Logo EcoSoluções">
+                    <h1>Unipers Ecologic</h1>
+                </div>
+                
+                <div class="contact-info">
+                    <p>Email: contato@uniperseco.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Endereço: Rua Unip, Asa sul</p>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <script src="/Embalagens Sustetáveis/interatividade.js"></script>
+</body>
+</html>

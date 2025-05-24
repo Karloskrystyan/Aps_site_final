@@ -1,0 +1,307 @@
+:root {
+    --primary: #2b922b;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #ece5df;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.utensilios-hero {
+    background: var(--primary);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--text-light);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.utensilios-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.utensilios-hero p {
+    font-size: 1.5rem;
+}
+
+/* Headers */
+.main-header, .secondary-header {
+    margin: 50px 20px 30px;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--text-dark);
+}
+
+.secondary-header {
+    margin-top: 80px;
+}
+
+/* Card Containers */
+.materiais-section, .outros-tipos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* Card Images */
+.card-img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.card-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img:hover img {
+    transform: scale(1.05);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-dark);
+    font-size: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 90%;
+}
+
+/* Card Text */
+.h3-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+
+.h3-card.visible {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+}
+
+.h3-card h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* Second Part Cards */
+.text-card {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.text-card h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.imagem {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    margin: 30px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.imagem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.texto strong {
+    color: var(--primary);
+}
+
+/* Animations */
+.aparecer {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.aparecer.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide Animation */
+@keyframes slide-left {
+    0% { 
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.card-img.slide-left {
+    animation: slide-left 0.5s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .card-img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .utensilios-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .utensilios-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .main-header, .secondary-header {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .h3-card {
+        max-width: 500px;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .utensilios-hero {
+        padding: 80px 20px;
+        min-height: 250px;
+    }
+    
+    .card-img {
+        height: 350px;
+    }
+    
+    .text-overlay {
+        font-size: 1.5rem;
+    }
+    
+    .text-card h1 {
+        font-size: 1.8rem;
+    }
+    
+    .imagem {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .utensilios-hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .utensilios-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .main-header, .secondary-header {
+        font-size: 1.5rem;
+    }
+    
+    .card-img {
+        height: 300px;
+    }
+    
+    .h3-card h3 {
+        font-size: 1rem;
+    }
+    
+    .text-card h1 {
+        font-size: 1.5rem;
+    }
+    
+    .imagem {
+        height: 250px;
+    }
+    
+    .texto {
+        font-size: 1rem;
+    }
+}

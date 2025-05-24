@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unipers Ecologic</title>
+        
+</head>
+<body>
+    <div class="teste">
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://img.icons8.com/color/48/000000/leaf.png" alt="Logo EcoSoluções">
+                    <h1>Unipers Ecologic</h1>
+                </div>
+                <div class="mobile-menu">☰</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#solutions">Soluções</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Soluções Biodegradáveis para um Futuro Sustentável</h2>
+                <p>Descubra como pequenas mudanças em seus hábitos podem fazer uma grande diferença para o planeta.</p>
+                <a href="#solutions" class="btn">Conheça Nossas Soluções</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre as Soluções Biodegradáveis</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>O que são materiais biodegradáveis?</h3>
+                    <p>Materiais biodegradáveis são aqueles que podem ser decompostos por microrganismos naturais (como bactérias, fungos e algas) em um período relativamente curto, retornando à natureza sem deixar resíduos tóxicos.</p>
+                    <p>Diferentemente dos plásticos convencionais que podem levar até 400 anos para se decompor, os materiais biodegradáveis se decompõem em meses ou poucos anos, dependendo das condições ambientais.</p>
+                    <p>Na Unipers Ecologic, desenvolvemos alternativas sustentáveis para produtos do dia a dia, ajudando a reduzir o impacto ambiental e promovendo um consumo mais consciente.</p>
+                    <a href="#solutions" class="btn">Ver Produtos</a>
+                </div>
+                <div class="about-img">
+                    <img src="/img/produtos descartaveis.jpg" alt="Produtos biodegradáveis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <h2 class="section-title">Nossas Soluções</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/img/descartavel.jpeg" alt="Utensílios biodegradáveis">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Utensílios Descartáveis</h3>
+                        <p>Talheres, pratos e copos feitos de bambu, bagaço de cana e amido de milho que se decompõem em 3-6 meses.</p>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/img/embalagens_sustentaveis_0.jpg" alt="Embalagens biodegradáveis">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Embalagens Sustentáveis</h3>
+                        <p>Embalagens feitas de fibras vegetais, PLA (ácido polilático) e outros materiais compostáveis para substituir o plástico.</p>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-img">
+                        <img src="/img/COOUKLXJJNNLJOWM2E6UXOGHNM.jpg" alt="Produtos de limpeza ecológicos">
+                    </div>
+                    <div class="solution-content">
+                        <h3>Produtos de Limpeza Ecológicos</h3>
+                        <p>Detergentes, sabões e desinfetantes com formulações biodegradáveis que não poluem rios e mares.</p>
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Benefícios</h2>
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Redução de Resíduos</h3>
+                    <p>Materiais que se decompõem rapidamente, diminuindo o acúmulo de lixo em aterros e oceanos.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💧</div>
+                    <h3>Menos Poluição</h3>
+                    <p>Evita a contaminação do solo e da água por substâncias tóxicas presentes em materiais convencionais.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Economia de Recursos</h3>
+                    <p>Utilização de matérias-primas renováveis, reduzindo a dependência de petróleo e outros recursos não renováveis.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">♻️</div>
+                    <h3>Ciclo Sustentável</h3>
+                    <p>Os resíduos podem ser compostados, retornando nutrientes para o solo e fechando o ciclo de produção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para Adotar um Estilo de Vida Mais Sustentável?</h2>
+            <p>Junte-se a milhares de pessoas que já estão fazendo a diferença pelo planeta com pequenas mudanças no dia a dia.</p>
+            <a href="#contact" class="btn btn-light">Entre em Contato</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EcoSoluções</h3>
+                    <p>Oferecendo alternativas sustentáveis para um futuro mais verde desde 2025.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#solutions">Soluções</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>📞 (61) 40028922</li>
+                        <li>✉️ unipersecologic@gmail.com</li>
+                        <li>🏢 Rua Sustentável, 123 - São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Assine para receber dicas sustentáveis e novidades.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="btn">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+<script src="menu.js"></script>
+</body>
+</html>

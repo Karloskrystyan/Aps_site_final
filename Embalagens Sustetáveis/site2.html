@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnipersEco</title>
+    <link rel="stylesheet" href="/Utensílios Descartáveis/site1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos adicionais para os cards */
+        .materiais-section {
+            padding: 60px 0;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .card-img {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            font-size: 2rem;
+            text-align: center;
+            background: rgba(255,255,255,0.7);
+            padding: 10px 20px;
+            border-radius: 8px;
+            width: 90%;
+        }
+        
+        .h3-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 20px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            visibility: hidden;
+        }
+        
+        .h3-card.visible {
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+        }
+        
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card-img {
+                height: 350px;
+            }
+            
+            .h3-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="primeira-pagina">
+        <header id="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="https://img.icons8.com/color/48/000000/leaf.png" alt="Logo EcoSoluções">
+                        <h1>Unipers Ecologic</h1>
+                    </div>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#materiais">Materiais</a></li>
+                            <li><a href="#processo">Processo</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Embalagens Sustentáveis</h2>
+                    <p>Soluções ecológicas para substituir o plástico e preservar o meio ambiente</p>
+                    <a href="#materiais" class="btn">Conheça os materiais</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seção de Materiais Sustentáveis -->
+    <section id="materiais" class="materials-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Materiais Sustentáveis</h2>
+            </div>
+            
+            <!-- Cards de Embalagens Sustentáveis -->
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/agua.jpeg" alt="Embalagem Solúvel em Água">
+                    <div class="text-overlay">
+                        <h4>Embalagens Solúveis em Água</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p>Embalagem solúvel em água é uma solução inovadora no âmbito das embalagens sustentáveis. Esse material de embalagem ecologicamente correto, feito para se dissolver em água, substitui as embalagens convencionais que podem reduzir o desperdício e estimular a preservação ambiental.</p>
+                        <p><br>As embalagens solúveis em água são normalmente feitas de materiais biodegradáveis, como o PVA (álcool polivinílico), e podem se dissolver completamente com segurança sem deixar resíduos prejudiciais.</p>
+                        <p><br>As aplicações para embalagens solúveis em água incluem fertilizantes ou pesticidas na agricultura e sachês descartáveis para detergentes e produtos de limpeza. Esta solução de embalagem reduz a poluição plástica e alivia a carga nos aterros sanitários.</p>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/agricola.jpeg" alt="Embalagens de subprodutos agrícolas">
+                    <div class="text-overlay">
+                        <h4>Embalagens de Subprodutos Agrícolas</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p><br><br>As embalagens de subprodutos agrícolas são um avanço notável em soluções de embalagens sustentáveis. A utilização de resíduos agrícolas como cascas de frutas, bagaço ou mesmo palhas de trigo para criar materiais de embalagem inovadores pode reduzir a procura de recursos virgens.</p>
+                        <p><br>Esses materiais ajudam a desviar os resíduos agrícolas dos aterros, fechando o ciclo de utilização dos recursos, incentivando uma economia circular em que o lixo é um recurso valioso.</p>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-img">
+                    <img src="/img/compostáveis.jpeg" alt="Embalagens Compostáveis">
+                    <div class="text-overlay">
+                        <h4>Embalagens Compostáveis</h4>
+                    </div>
+                </div>
+                <div class="h3-card">
+                    <h3>
+                        <p><br><br>Embalagens rotuladas como compostáveis se decompõem em dióxido de carbono, água e elementos inorgânicos sem deixar resíduos tóxicos. No entanto, para convertê-las em composto, os resíduos precisam ser processados. Isso geralmente acontece enviando a embalagem para uma unidade de compostagem industrial.</p>
+                        <p><br>Uma vez que vão para a pilha de compostagem e se decompõem completamente, os objetos compostáveis fornecem ao solo nutrientes valiosos. Este tipo de embalagem é ideal para produtos orgânicos e pode ser uma solução eficaz para reduzir o desperdício de alimentos.</p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Outros Tipos -->
+<div class="outros-tipos-header">
+    <div class="container">
+        <div class="outros-tipos-title">
+            <div class="title-line"></div>
+            <h2>Outros Tipos de Embalagens</h2>
+            <div class="title-line"></div>
+        </div>
+        <p class="outros-tipos-subtitle">Conheça mais alternativas sustentáveis</p>
+    </div>
+</div>
+
+    <section class="outros-tipos">
+        <div class="text-card aparecer">
+            <h1>Embalagens de Papel Reciclado</h1>
+            <div class="imagem">
+                <img src="/img/reciclaveis.jpeg" alt="Embalagens de papel reciclado">
+            </div>
+            <div class="texto">
+                <p>Essas embalagens são feitas a partir de fibras de papel, contribuindo para a redução da derrubada de árvores e demandam menos energia em sua produção.</p>
+                <p><strong><hr>Exemplo: caixas de cereais feitas a partir de papelão reciclado. Podem ser facilmente reconhecidas pela cor mais escura e pela textura diferente.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Embalagens de Vidro</h1>
+            <div class="imagem">
+                <img src="/img/vidro.jpeg" alt="Embalagens de Vidro">
+            </div>
+            <div class="texto">
+                <p>Reutilizáveis e recicláveis, as embalagens de vidro são uma alternativa durável e sustentável, especialmente quando usadas em sistemas de retorno e reabastecimento.</p>
+                <p><strong><br>Exemplo: Garrafas de refrigerantes ou cerveja que, após serem consumidas, são devolvidas ao fabricante para serem higienizadas e reutilizadas.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Embalagens Comestíveis</h1>
+            <div class="imagem">
+                <img src="/img/sorvete1.jpeg" alt="Embalagens comestiveis">
+            </div>
+            <div class="texto">
+                <p>Criativas e inovadoras, esses modelos de embalagens são feitos de ingredientes que podem ser consumidos, como algas ou amidos, sendo uma opção principalmente para alimentos.</p>
+                <p><strong><br>Exemplo: casquinhas de sorvete que eliminam qualquer desperdício, pois podem ser consumidas após o alimento acabar.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Embalagens de Cera de Abelha</h1>
+            <div class="imagem">
+                <img src="/img/abelha.jpeg" alt="Embalagens de cera de abelha">
+            </div>
+            <div class="texto">
+                <p><br>Tecidos revestidos com cera de abelha são reutilizáveis e excelentes para conservar alimentos, substituindo os plásticos descartáveis.</p>
+                <p><strong><br>Exemplo: pode ser utilizada para envolver alimentos e também embalar cosméticos devido à sua natureza natural.</strong></p>
+            </div>
+        </div>
+
+        <div class="text-card aparecer">
+            <h1>Embalagens de Amido</h1>
+            <div class="imagem">
+                <img src="/img/amido.jpeg" alt="Embalagens de amido">
+            </div>
+            <div class="texto">
+                <p>Produzidas a partir de amido de plantas como milho ou batata, essas embalagens são compostáveis e fornecem uma alternativa ao plástico tradicional. Têm a capacidade de se decompor rapidamente, reduzindo o impacto ambiental.</p>
+                <p><strong><br>Exemplo: Talheres descartáveis, pratos e tigelas feitos a partir de amido de milho, frequentemente utilizados em eventos ou locais que adotam práticas sustentáveis.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Processo -->
+    <section id="processo" class="process">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Como São Produzidos</h2>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step fade-in delay-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Seleção da Matéria-Prima</h3>
+                        <p>Os materiais são cuidadosamente selecionados de fontes sustentáveis e renováveis. Cada fornecedor é auditado para garantir práticas ambientais e sociais adequadas.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Preparação dos Materiais</h3>
+                        <p>Cada matéria-prima passa por um processo específico de preparação para garantir a qualidade final do produto.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Moldagem dos Produtos</h3>
+                        <p>Os materiais preparados são então moldados sob pressão e temperatura controladas. Cada processo é otimizado para minimizar o consumo energético.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-1">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Controle de Qualidade</h3>
+                        <p>Cada lote de produtos passa por rigorosos testes de qualidade, incluindo verificação de resistência, ausência de contaminantes e adequação ao contato com alimentos.</p>
+                    </div>
+                </div>
+                
+                <div class="step fade-in delay-2">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Embalagem Sustentável</h3>
+                        <p>Os produtos são embalados em materiais igualmente ecológicos com informações claras sobre compostagem e descarte adequado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Vantagens Ambientais</h2>
+            </div>
+            <div class="benefit-grid">
+                <div class="benefit-card fade-in delay-1">
+                    <div class="benefit-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Decomposição Rápida</h3>
+                    <p>Enquanto plásticos levam até 400 anos para se decompor, nossos produtos desaparecem em 3-6 meses em condições ideais de compostagem.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-2">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Redução de CO₂</h3>
+                    <p>O processo de produção emite até 70% menos gases de efeito estufa comparado ao plástico convencional.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-3">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Proteção Marinha</h3>
+                    <p>Se descartados incorretamente, degradam-se sem formar microplásticos que contaminam os oceanos.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-1">
+                    <div class="benefit-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Economia Circular</h3>
+                    <p>Transformam resíduos agrícolas em produtos valiosos, fechando o ciclo de produção.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-2">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Recursos Renováveis</h3>
+                    <p>Utilizam matérias-primas que podem ser replantadas e recolhidas anualmente.</p>
+                </div>
+                
+                <div class="benefit-card fade-in delay-3">
+                    <div class="benefit-icon">
+                        <i class="fas fa-battery-three-quarters"></i>
+                    </div>
+                    <h3>Baixo Consumo Energético</h3>
+                    <p>O processo de fabricação requer menos energia que a produção de plásticos tradicionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção CTA -->
+    <section class="cta fade-in">
+        <div class="container">
+            <h2>Juntos Podemos Fazer a Diferença</h2>
+            <p>Pequenas mudanças no nosso dia a dia têm grande impacto no planeta. Substituir embalagens convencionais por opções ecológicas é um passo simples com benefícios enormes para o meio ambiente.</p>
+            <a href="#materiais" class="btn">Conheça Nossos Materiais</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="https://img.icons8.com/color/48/000000/leaf.png" alt="Logo EcoSoluções">
+                    <h1>Unipers Ecologic</h1>
+                </div>
+                
+                <div class="contact-info">
+                    <p>Email: contato@uniperseco.com</p>
+                    <p>Telefone: (61) 1234-5678</p>
+                    <p>Endereço: Rua Unip, Asa sul</p>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <script src="/Embalagens Sustetáveis/interatividade.js"></script>
+</body>
+</html>
